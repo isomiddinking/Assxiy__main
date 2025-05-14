@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Asaxiy - O'zbekistonning eng yirik onlayn do'koni</title>
+    <link rel="icon" href="https://asaxiy.uz/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Yuklash animatsiyasi -->
+    <div class="loader">
+        <img src="/assets/logo.svg" alt="Asaxiy logo">
+        <div class="loader-spinner"></div>
+    </div>
+
+    
+    <!-- Sarlavha qismi -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/assets/logo.svg" alt="Asaxiy logo" width="150">
+                    </a>
+                </div>
+                <div class="btn btn1"> <span><i class="fas fa-bars"></i> Категории</span></div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Mahsulotlar va kategoriyalar bo'yicha qidiruv...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <a href="#" class="header-action">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>Сравнение</span>
+                    </a>
+                    <a href="#" class="header-action">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Оплатить</span>
+                    </a>
+                    <a href="#" class="header-action">
+                        <i class="fas fa-truck"></i>
+                        <span>Отследить</span>
+                    </a>
+                    <a href="#" class="header-action">
+                        <i class="far fa-heart"></i>
+                        <span>Избранное</span>
+                        <span class="wishlist-count">0</span>
+                    </a>
+                    <div class="cart-wrapper">
+                        <a href="#" class="header-action">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Корзина</span>
+                            <div class="cart-count">0</div>
+                        </a>
+                    </div>
+                    <a href="#" class="header-action">
+                        <i class="far fa-user"></i>
+                        <span>Войти</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Кондиционеры <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Смартфоны <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Бытовая техника <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Книги <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Телевизоры <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Ноутбуки <i class="fas fa-chevron-down"></i></a></li>
+                </ul>
+                
+                <div class="current-date"></div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobil menyu -->
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <img src="/assets/logo.svg" alt="Asaxiy logo" width="120">
+            </div>
+            <button class="close-menu-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="search-box" style="margin-bottom: 20px;">
+            <input type="text" placeholder="Qidiruv...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="current-date" style="margin-bottom: 20px;"></div>
+        
+        <ul class="mobile-nav-links">
+            <li><a href="#">Кондиционеры</a></li>
+            <li><a href="#">Смартфоны</a></li>
+            <li><a href="#">Бытовая техника</a></li>
+            <li><a href="#">Книги</a></li>
+            <li><a href="#">Телевизоры</a></li>
+            <li><a href="#">Ноутбуки</a></li>
+        </ul>
+        
+        <div class="mobile-menu-actions">
+            <a href="#" class="mobile-menu-action cart-action">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Корзина</span>
+                <div class="mobile-cart-count">0</div>
+            </a>
+            <a href="#" class="mobile-menu-action wishlist-action">
+                <i class="far fa-heart"></i>
+                <span>Избранное</span>
+                <div class="mobile-wishlist-count">0</div>
+            </a>
+            <a href="#" class="mobile-menu-action">
+                <i class="fas fa-truck"></i>
+                <span>Отследить</span>
+            </a>
+            <a href="#" class="mobile-menu-action">
+                <i class="far fa-user"></i>
+                <span>Войти</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Asosiy kontent -->
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+              <div class="swiper hero-slider">
+                <div class=" swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="grid grid2">
+                    <!-- 1 -->
+                    <div class="card">
+                        <div class="img-part">
+                            <div class="action">Aksiya</div>
+                            <img src="/assets/673c93fb2f6a2.png" alt="product image">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>  
+                        <div class="text-part">
+                            <div class="about-product">
+                                <p>Honor X9C 8/256 Titanium black Smartfoni</p>
+                                <div class="comments">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.5 (123 sharsh)</p>
+                                </div>
+                                <b class="d_p">4 920 so'm/oyiga</b>
+                            </div>
+                            <div class="buy">
+                                <div class="price">
+                                    <b>57 000 so'm</b>
+                                    <p>41 000 so'm</p>
+                                </div>
+                                <i class='bx bx-shopping-bag' ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="card">
+                        <div class="img-part">
+                            <div class="action">Aksiya</div>
+                            <img src="/assets/samsung a 36.jpg" alt="product image">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>  
+                        <div class="text-part">
+                            <div class="about-product">
+                                <p>Samsung Galaxy A36 5G 8/128 Awesome black</p>
+                                <div class="comments">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.5 (123 sharsh)</p>
+                                </div>
+                                <b class="d_p">4 920 so'm/oyiga</b>
+                            </div>
+                            <div class="buy">
+                                <div class="price">
+                                    <b>57 000 so'm</b>
+                                    <p>41 000 so'm</p>
+                                </div>
+                                <i class='bx bx-shopping-bag' ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="card">
+                        <div class="img-part">
+                            <div class="action">Aksiya</div>
+                            <img src="/assets/s25 ultra.png" alt="product image">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>  
+                        <div class="text-part">
+                            <div class="about-product">
+                                <p>Samsung Galaxy S25 Ultra 12/256 GB Titanium...</p>
+                                <div class="comments">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.5 (123 sharsh)</p>
+                                </div>
+                                <b class="d_p">4 920 so'm/oyiga</b>
+                            </div>
+                            <div class="buy">
+                                <div class="price">
+                                    <b>57 000 so'm</b>
+                                    <p>41 000 so'm</p>
+                                </div>
+                                <i class='bx bx-shopping-bag' ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="card">
+                        <div class="img-part">
+                            <div class="action">Aksiya</div>
+                            <img src="/assets/xiomi swiper.webp" alt="product image">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>  
+                        <div class="text-part">
+                            <div class="about-product">
+                                <p>Xiomi Redmi Pad Pro 5G Sim 8/256Gb Kulrang</p>
+                                <div class="comments">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.5 (123 sharsh)</p>
+                                </div>
+                                <b class="d_p">4 920 so'm/oyiga</b>
+                            </div>
+                            <div class="buy">
+                                <div class="price">
+                                    <b>57 000 so'm</b>
+                                    <p>41 000 so'm</p>
+                                </div>
+                                <i class='bx bx-shopping-bag' ></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                       <div class="grid">
+
+                        <!-- 2-1 -->
+                     <div class="card">
+                        <div class="img-part">
+                            <div class="action">Aksiya</div>
+                            <img src="/assets/zte swiper.jpg" alt="product image">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>  
+                        <div class="text-part">
+                            <div class="about-product">
+                                <p>Zte Blade A55 4/128GB Black Smartfoni</p>
+                                <div class="comments">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.5 (123 sharsh)</p>
+                                </div>
+                                <b class="d_p">4 920 so'm/oyiga</b>
+                            </div>
+                            <div class="buy">
+                                <div class="price">
+                                    <b>57 000 so'm</b>
+                                    <p>41 000 so'm</p>
+                                </div>
+                                <i class='bx bx-shopping-bag' ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2-2 -->
+                    <div class="card">
+                        <div class="img-part">
+                            <div class="action">Aksiya</div>
+                            <img src="/assets/vesto__swioer.jpg" alt="product image">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>  
+                        <div class="text-part">
+                            <div class="about-product">
+                                <p>Notubuk Dell vostro 3520-E005-Blik / Intel I3</p>
+                                <div class="comments">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.5 (123 sharsh)</p>
+                                </div>
+                                <b class="d_p">4 920 so'm/oyiga</b>
+                            </div>
+                            <div class="buy">
+                                <div class="price">
+                                    <b>57 000 so'm</b>
+                                    <p>41 000 so'm</p>
+                                </div>
+                                <i class='bx bx-shopping-bag' ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2-3 -->
+                    <div class="card">
+                        <div class="img-part">
+                            <div class="action">Aksiya</div>
+                            <img src="/assets/biryus muzlatkich.webp" alt="product image">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>  
+                        <div class="text-part">
+                            <div class="about-product">
+                                <p>Biryusa 118 Sovutkich</p>
+                                <div class="comments">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.5 (123 sharsh)</p>
+                                </div>
+                                <b class="d_p">4 920 so'm/oyiga</b>
+                            </div>
+                            <div class="buy">
+                                <div class="price">
+                                    <b>57 000 so'm</b>
+                                    <p>41 000 so'm</p>
+                                </div>
+                                <i class='bx bx-shopping-bag' ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2-4 -->
+                    <div class="card">
+                        <div class="img-part">
+                            <div class="action">Aksiya</div>
+                            <img src="/assets/book slider.jpg" alt="product image">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>  
+                        <div class="text-part">
+                            <div class="about-product">
+                                <p>Xiomi MI Band 9 (Global) black smart-brasleti</p>
+                                <div class="comments">
+                                    <i class='bx bxs-star' ></i>
+                                    <p>4.5 (123 sharsh)</p>
+                                </div>
+                                <b class="d_p">4 920 so'm/oyiga</b>
+                            </div>
+                            <div class="buy">
+                                <div class="price">
+                                    <b>57 000 so'm</b>
+                                    <p>41 000 so'm</p>
+                                </div>
+                                <i class='bx bx-shopping-bag' ></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tugmalar -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- telefon va gadjetlar -->
+          <section class="gadjetlar">
+            <p class="gadjed-title">Telefonlar va gadjetlar</p>
+             <div class="grid">
+            <div class="card_iteam">
+                <div class="iteam__title">
+                    <img src="/assets/honor 400 lite.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Honor 400 Lite 5G 8/128 GB Velvet Black Smartfoni</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">3 899 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="card_iteam">
+                <div class="iteam__title">
+                    <img src="/assets/honor magic.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Honor Magic V3 16/512Gb Qora Smartfoni Premyera...</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">3 899 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card_iteam">
+                <div class="iteam__title">
+                    <img src="/assets/vivo s2.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Vivo X2020 Pro 5G 12/256 cosmos Black Smartfoni</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">3 899 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card_iteam">
+                <div class="iteam__title">
+                    <img src="/assets/zte s2.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Zte Blade A55 4/128 GB Black Smartfoni</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">3 899 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+             </div>
+        </section>
+
+        <!-- Besteller -->
+        <section class="BESTSELLER">
+            <p class="gadjed-title">BESTSELLER</p>
+             <div class="grid">
+                <!-- 1 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="/assets/book.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Asaxiy Books yil bestsellarlari 2024 to'plami</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">1 099 000 so'm</div>
+                        <div class="old__price">3 899 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="card_iteam ">
+                <div class="iteam__title">
+                    <img src="/assets/robert grin.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Robert Grin:Mahoart</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">1 099 000 so'm</div>
+                        <div class="old__price">3 899 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="/assets/honor x9 c.png" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Honor C9C 8/256 Gb Titanium Black Smartfoni</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">1 099 000 so'm</div>
+                        <div class="old__price">3 899 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="/assets/smart tv control.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Smart tv Pristavka Xiomi Mi TV stick 4k</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">1 099 000 so'm</div>
+                        <div class="old__price">3 899 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+             </div>
+        </section>
+
+        <!-- Konditsionerlar -->
+        <section class="BESTSELLER">
+            <p class="gadjed-title">Konditsionerlar</p>
+             <div class="grid">
+                <!-- 1 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Chegirma</div>
+                    <img src="https://assets.asaxiy.uz/product/main_image/desktop/661e13fb0646a.jpg.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Kondisioner Immer Turbo 12 Inverter </h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">4 519 000 so'm</div>
+                        <div class="old__price">3 699 000 so'm</div>
+                        <div class="new__price">443 900 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+          
+            <div class="card_iteam ">
+                <div class="iteam__title">
+                    <div class="action">Chegirma</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/main_image/desktop/6644427a49598.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Kondisioner Immer T-Cardi 18 Inverter</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">5 969 000 so'm</div>
+                        <div class="old__price">5 369 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Chegirma</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/main_image/desktop/668532c5a1750.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Kondisioner Immer T-Nova 18 Inverter</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">5 969 000 so'm</div>
+                        <div class="old__price">5 369 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Chegirma</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/6512bd43d9caa6e02c990b0a82652dca2024071012484511599lf9moBkTSo.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Kondisioner Immer T-Crystal 18 Inverter</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">5 589 000 so'm</div>
+                        <div class="old__price">5 369 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Chegirma</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/b6d767d2f8ed5d21a44b0e5886680cb92023101612190147057cpFK5DmfIe.jpg.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Kondisioner Immer T-Pro 18 Inverter</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">5 589 000 so'm</div>
+                        <div class="old__price">5 369 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Chegirma</div>
+                    <img src="https://assets.asaxiy.uz/product/items/desktop/6512bd43d9caa6e02c990b0a82652dca2024032310012562170o0hrC2shJq.jpg.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Kondisioner Immer Prue 12 In</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">5 589 000 so'm</div>
+                        <div class="old__price">5 369 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="card_iteam height">
+            <div class="iteam__title">
+                <div class="action">Chegirma</div>
+                <img src="https://assets.asaxiy.uz/product/items/desktop/96a3be3cf272e017046d1b2674a52bd320240323101740440163mPBKJAxp6.jpg.webp" alt="" class="title_img">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product__title">
+                <h3>Kondisioner Immer Aero 12 Inverter</h3>
+                <div class="coment  ">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <span class="coment">5 Ta sharh</span>
+                </div>
+                <div class="price">
+                    <div class="old1-price">4 289 000 so'm</div>
+                    <div class="old__price">3 769 000 so'm</div>
+                    <div class="new__price">325 000 so'm x 12oy</div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+            </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Chegirma</div>
+                    <img src="https://assets.asaxiy.uz/product/items/desktop/6512bd43d9caa6e02c990b0a82652dca2024032310440586856d9WDVyFHyC.jpg.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Kondisioner Immer Frenzi 12 Inverter</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">4 289 000 so'm</div>
+                        <div class="old__price">3 769 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+                </div>
+
+             
+             </div>
+        </section>
+
+        <!-- Komyuter jihozlari -->
+        <section class="BESTSELLER">
+            <p class="gadjed-title">Kompyuter jihozlari</p>
+             <div class="grid">
+                <!-- 1 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://assets.asaxiy.uz/product/main_image/desktop/6363a554bd26c.jpg.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>SSD Hikvision M.2 E3000 256GB NVME </h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">279 000 so'm</div>
+                        <div class="new__price">443 900 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+          
+            <div class="card_iteam ">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/main_image/desktop/64691a39b56c4.png.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>YEsido LPO1 noutbuk uchun stendi</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">149 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/42a0e188f5033bc65bf8d78622277c4e20240207132417558565x11SoeXOK.jpg.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>SanDisk Extreme pro SDXC UHS Class 10 V30 200MB/s 64Gb xotira kartasi</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">269 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/d47268e9db2e9aa3827bba3afb7ff94a2023010512123247414FoQkePflAw.png" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Transcend 2TB StoreJet 25M3 2,5 Tashqi HDD-diski</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">5 589 000 so'm</div>
+                        <div class="old__price">5 369 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+             </div>
+        </section>
+
+        <!-- Ommabop tovarlar -->
+        <section class="BESTSELLER">
+            <p class="gadjed-title">Ommabop tovarlar</p>
+             <div class="grid">
+                <!-- 1 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/5f93f983524def3dca464469d2cf9f3e2025041718055357825btcGBDurwZ.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Xiomi Mi Band 9 (Global) Black smart-brasleti </h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">709 000 so'm</div>
+                        <div class="old__price">469 000 so'm</div>
+                        <div class="new__price">443 900 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="card_iteam ">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/1f097ebd5ca4bcfa3c5ded024e8e47f32020101718562830980LzbGgrTViw.png.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Xiomi Mi Box TV S 4K 2nd GEN Smart pristakasi</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">809 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/1679091c5a880faf6fb5e6087eb1b2dc2025042317545455215ewFCHOANOy.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Ximoi Redmi 14C 8/256GB Qora Smartfoni</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">1 829 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/af7ffe73467ec02c53b25f4603b9e3f62024121317140382538HYxbpAhUZZ.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>OQ SIM-kartasi</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">10 000 so'm</div>
+                        <div class="new__price">1 200 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/main_image/desktop/643e2e8c8cff5.jpg.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>MerKan, KT 168 perexodnik-adapteri</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">29 200 so'm</div>
+                        <div class="new__price">3 600 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/a4e2b1bd3155ac020ec212bf8c0901c320230718160025958230RwawO7dmP.jpg.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Daron Ajemo'g'li, Jeyms A.Robinson:Mamlakatlar tanazzuli sabablari: qudrat</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">89 000 so'm</div>
+                        <div class="new__price">10 700 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="card_iteam height">
+            <div class="iteam__title">
+                <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/2cbca44843a864533ec05b321ae1f9d12023050510533959489PbmlZ2I6Vv.png.webp" alt="" class="title_img">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product__title">
+                <h3>Hoco W35 Max oq simsiz qulochin BESTELLER</h3>
+                <div class="coment  ">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <span class="coment">5 Ta sharh</span>
+                </div>
+                <div class="price">
+                    <div class="old__price">309 000 so'm</div>
+                    <div class="new__price">325 000 so'm x 12oy</div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+            </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/main_image/desktop/67a747ff3a39e.png" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Honor X8C 8/128GB Green (Yashil) Smartfoni</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">3 289 000 so'm</div>
+                        <div class="old__price">2 789 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="card_iteam height">
+                    <div class="iteam__title">
+                        <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/c81e728d9d4c2f636f067f89cc14862c2023121111572184922qqS36EUk5v.jpg.webp" alt="" class="title_img">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__title">
+                        <h3>Perogenerator braun CareStyle 7 Pro IS7286BK</h3>
+                        <div class="coment  ">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span class="coment">5 Ta sharh</span>
+                        </div>
+                        <div class="price">
+                            <div class="old__price">3 929 000 so'm</div>
+                            <div class="new__price">325 000 so'm x 12oy</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                        <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                    </div>
+
+                     <!-- 10 -->
+                  <div class="card_iteam height">
+                    <div class="iteam__title">
+                        <img src="https://cdn.asaxiy.uz/asaxiy-content/product/main_image/desktop/66f6999ee2782.webp" alt="" class="title_img">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__title">
+                        <h3>Apple Iphone 16 128GB (1 SIM) Black Smartfoni</h3>
+                        <div class="coment  ">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span class="coment">5 Ta sharh</span>
+                        </div>
+                        <div class="price">
+                            <div class="old1-price">12 909 000 so'm</div>
+                            <div class="old__price">10 249 000 so'm</div>
+                            <div class="new__price">325 000 so'm x 12oy</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                        <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                    </div>
+
+                          <!-- 11 -->
+                <div class="card_iteam height">
+                    <div class="iteam__title">
+                        <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/c8ffe9a587b126f152ed3d89a146b4452024111817322223833SYO3lvBptc.jpg" alt="" class="title_img">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__title">
+                        <h3>Samsung Galaxy A16 6/128GB Light Green Smartfoni</h3>
+                        <div class="coment  ">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span class="coment">5 Ta sharh</span>
+                        </div>
+                        <div class="price">
+                            <div class="old1-price">2 419 000 so'm</div>
+                            <div class="old__price">2 239 000 so'm</div>
+                            <div class="new__price">325 000 so'm x 12oy</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                        <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                    </div>
+
+                        <!-- 12 -->
+                <div class="card_iteam height">
+                    <div class="iteam__title">
+                        <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/088294b9a7476455eadcda2ef90d6f3a2024022216310082860viJEPUPd2s.png.webp" alt="" class="title_img">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__title">
+                        <h3>ANC Airpods Pro 2 simsiz quloqchinlari. Sifat kafolati!</h3>
+                        <div class="coment  ">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span class="coment">5 Ta sharh</span>
+                        </div>
+                        <div class="price">
+                            <div class="old1-price">199 000 so'm</div>
+                            <div class="old__price">156 000 so'm</div>
+                            <div class="new__price">19 100 000 so'm x 12oy</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                        <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                    </div>
+                                <!-- 13 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src=https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/4ec8065b5694389faef8674e9ad1d92a2024121018575862993CBjXASLYGv.png alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Honor X5b Plus 4/128Gb Midnight</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">1 599 000 so'm</div>
+                        <div class="old__price">1 459000 so'm</div>
+                        <div class="new__price">443 900 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 14-->
+            <div class="card_iteam ">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/7ef605fc8dba5425d6965fbd4c8fbe1f2025011517435514784Y5qc4v0dYO.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Xiomi Redmi Note 14 Pro 8/256GB Midnight Black Smartfoni. BESTELLER</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">3 969 000 so'm</div>
+                        <div class="old__price">3 319 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/a5bfc9e07964f8dddeb95fc584cd965d2025031818573139933527PAStv1H.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Samsung Galaxy A56 5G 8/128 Awesome Garphite Smartfoni</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">5 089 000 so'm</div>
+                        <div class="old__price">4 649 000 so'm</div>
+                        <div class="new__price">325 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/54739259d831c1c56d80b31f21297bfc202504051055507501034Kyjh2O7n.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Marg'ulon Seysemboy: Uddalasa bo'ladigan vazifa: Baxtli hayot texnologiyasi. Premyera!</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">99 000 so'm</div>
+                        <div class="old__price">80 000 so'm</div>
+                        <div class="new__price">1 200 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+             
+             </div>
+        </section>
+
+        <!-- Chegirmalar -->
+        <section class="BESTSELLER">
+            <p class="gadjed-title">Chegirmalar</p>
+             <div class="grid">
+                <!-- 1 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Super Narx</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/5405fdee91f6af21fea82d92285737732025041615101526730SWdf6Ra2sR.jpg" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Ardesto Sck 893Lemon oshxona tarozilar</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">199 000 so'm</div>
+                        <div class="old__price">109 000 so'm</div>
+                        <div class="new__price">13 100 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 2-->
+            <div class="card_iteam ">
+                <div class="iteam__title">
+                    <div class="action">Super Narx</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/e53234bb5a56c7d9d39d0b0345bf9a882024080910050113765kkPsc2IWqo.jpeg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Xiaoi Mi Band 9 (Global) Pink smart-brasleti</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">619 000 so'm</div>
+                        <div class="old__price">409 000 so'm</div>
+                        <div class="new__price">49 100 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Super Narx</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/main_image/desktop/6766c7ef2c5f0.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Moonx 43M850 Android TV Televizor BESTELLER</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">2 089 000 so'm</div>
+                        <div class="old__price">2 179 000 so'm</div>
+                        <div class="new__price">261 000 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Super Narx</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/c7e1249ffc03eb9ded908c236bd1996d2024121119051890612yddg2lC7K1.jpg" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Redmi Buds 6 Lite qora simsiz quloqchin</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">329 000 so'm</div>
+                        <div class="old__price">229 000 so'm</div>
+                        <div class="new__price">27 500 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+             </div>
+        </section>
+
+        <!-- Yangi kelganlar -->
+        <section class="BESTSELLER">
+            <p class="gadjed-title">Yangi Kelganlar</p>
+             <div class="grid">
+                <!-- 1 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Yangi</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/a684eceee76fc522773286a895bc84362025051416502137330L8XbUQpt0I.jpg" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Lava qopqog'i bilan qozon, 28sm 6,7 l</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">1 919 000 so'm</div>
+                        <div class="new__price">230 300 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 2-->
+            <div class="card_iteam ">
+                <div class="iteam__title">
+                    <div class="action">Yangi</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/1679091c5a880faf6fb5e6087eb1b2dc2025031809475539102wPNN28kgfX.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>LG Kg - AIDD / Steam - F2V3PS6W kir yuvish mashinasi</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old1-price">5 569 000 so'm</div>
+                        <div class="old__price">4 495 000 so'm</div>
+                        <div class="new__price">598 700 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Yangi</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/69fb53f86958210b9c198376c2c6392620250514180342810799hPSrdOaQL.png" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Moon petals kumush taqinchoqi</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">339 000 so'm</div>
+                        <div class="new__price">40 700 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card_iteam height">
+                <div class="iteam__title">
+                    <div class="action">Yangi</div>
+                    <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/d21dc94c1c5eb91599f49862b4eaf65620230124134931651894zMHwOjQg8.png.webp" alt="" class="title_img">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product__title">
+                    <h3>Softech ST22 simli klaviatura</h3>
+                    <div class="coment  ">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="coment">5 Ta sharh</span>
+                    </div>
+                    <div class="price">
+                        <div class="old__price">69 000 so'm</div>
+                        <div class="new__price">8 300 so'm x 12oy</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn"><span>Xoziroq xarid qilish</span></div>
+                    <div class="carzina">  <i class="fas fa-shopping-cart"></i></div>
+                </div>
+            </div>
+             </div>
+        </section>
+
+        <div class="asaxiy-about-container">
+            <h1 class="asaxiy-main-title">Asaxiy kompaniyasi haqida</h1>
+            
+            <div class="asaxiy-content-block">
+                <p class="asaxiy-lead-paragraph">
+                    Butun O'zbekiston bo'ylab maishiy texnika va elektronika tovarlarini yetkazib beruvchi kompaniyamizning asosiy afzalligi - ko'p yillik ish tajribasi va yaxshi nom qozonib olganligidir.
+                </p>
+                
+                <p class="asaxiy-paragraph">
+                    Asos solinganidan buyon Asaxiy internet-do'koni va uning jamoasi iste'mol bozorining talablari tendensiyalarini tinimsiz kuzatib kelmoqda; bu esa bizga eng so'nggi texnologiyalar va innovatsion yechimlardan hamisha xabardor bo'lib turish imkonini beradi.
+                </p>
+                
+                <p class="asaxiy-paragraph">
+                    Kompaniya mutaxassislari mijozlarimizning istaklarini diqqat bilan o'rganishadi, shu bilan birga resurslarni oqilona sarflash yo'li bilan hamyonbop narxlardagi sifatli yangi mahsulotlar bilan boyitilib kelmoqda.
+                </p>
+            </div>
+            
+            <div class="asaxiy-principles-block">
+                <h2 class="asaxiy-section-title">Kompaniyaning ish tamoyili</h2>
+                <div class="asaxiy-divider"></div>
+            </div>
+            
+            <div class="asaxiy-advantages-block">
+                <h2 class="asaxiy-section-title">Bizning afzalliklarimiz</h2>
+            </div>
+            
+            <div class="asaxiy-company-info">
+                <p><strong>"Asaxiy Books" MCHJ</strong></p>
+                <p>Ro'yxatdan o'tish raqami: 646439</p>
+                <p>INN: 305829008</p>
+                <p>MCHJ rahbari: Allayev Firuz Abdunasimovich</p>
+            </div>
+        </div>
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="asaxiy-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3 class="footer-title">Ma'lumotlar</h3>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-question-circle"></i><a href="#">Ko'p so'raladigan savollar</a></li>
+                        <li><i class="fas fa-newspaper"></i><a href="#">Yangiliklar</a></li>
+                        <li><i class="fas fa-blog"></i><a href="#">Blog</a></li>
+                        <li><i class="fas fa-tags"></i><a href="#">Bizning brendlarimiz</a></li>
+                        <li><i class="fas fa-briefcase"></i><a href="#">Asaxiydagı karyerası</a></li>
+                        <li><i class="fas fa-calendar-alt"></i><a href="#">Muddatli to'lov ofertası</a></li>
+                        <li><i class="fas fa-file-contract"></i><a href="#">Omnaviy oferta</a></li>
+                        <li><i class="fas fa-info-circle"></i><a href="#">Biz hacimizda</a></li>
+                        <li><i class="fas fa-sitemap"></i><a href="#">Sayt xaritası</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Biz bilan aloqa</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i><strong>+998 71 200 01 05</strong></p>
+                        <p><i class="fas fa-envelope"></i>info@asaxiy.uz</p>
+                        <p><i class="fab fa-telegram"></i>Telegram bot</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Chilonzor ko'chasi, 45/2, Toshkent</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Sodiqlik dasturlari</h3>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-award"></i><a href="#">"El-yurt ishonchi" statusi</a></li>
+                        <li><i class="fas fa-star"></i><a href="#">«Asaxiy Plus»</a></li>
+                        <li><i class="fas fa-file-signature"></i><a href="#">«Asaxiy Plus» ofertası</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Yetkazib berish va do'konlar</h3>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-store"></i><a href="#">Bizning do'konlar</a></li>
+                        <li><i class="fas fa-map-marked-alt"></i><a href="#">Olib ketish punktları</a></li>
+                        <li><i class="fas fa-truck"></i><a href="#">Yetkazib berish</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column payment-column">
+                    <h3 class="footer-title">To'lov turlari</h3>
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <i class="fab fa-cc-visa"></i>
+                            <span>VISA</span>
+                        </div>
+                        <div class="payment-method">
+                            <i class="fas fa-wallet"></i>
+                            <span>Payme</span>
+                        </div>
+                        <div class="payment-method">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Xazna</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    2015 - 2025 internet-do'kon asaxiy.uz: Maishiy texnikalar va boshgalar. 
+                    Mahsulotni yetkazib berish barcha viloyatlarda amalga oshiriladi. 
+                    Barcha huquqlar himoyalangan.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
